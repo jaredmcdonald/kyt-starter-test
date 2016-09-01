@@ -3,7 +3,7 @@
 // React: https://facebook.github.io/react/
 
 import React from 'react';
-import styles from 'Hello.scss';
+import styles from './Hello.scss';
 
 function HelloWorld() {
   return (
