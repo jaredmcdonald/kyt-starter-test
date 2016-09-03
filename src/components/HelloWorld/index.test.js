@@ -6,7 +6,6 @@
 
 import ava from 'ava';
 import React from 'react';
-import chai from 'chai';
 import { shallow } from 'enzyme';
 import HelloWorld from './index.js';
 
