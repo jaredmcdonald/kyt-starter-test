@@ -1,7 +1,6 @@
 
 // This testing environment uses:
 // ava : https://github.com/avajs/ava
-// chai: http://chaijs.com/
 // enzyme: https://github.com/airbnb/enzyme
 
 import ava from 'ava';
