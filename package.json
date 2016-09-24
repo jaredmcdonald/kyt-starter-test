@@ -23,7 +23,7 @@
     "url": "https://github.com/nytm/wf-kyt-starter/issues"
   },
   "kyt": {
-    "version": "^0.2.0"
+    "version": "0.2.0"
   },
   "homepage": "https://github.com/nytm/wf-kyt-starter#readme"
 }
