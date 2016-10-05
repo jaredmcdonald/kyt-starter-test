@@ -1,14 +1,9 @@
-
-// This testing environment uses:
-// ava : https://github.com/avajs/ava
-// enzyme: https://github.com/airbnb/enzyme
-
-import ava from 'ava';
 import React from 'react';
 import { shallow } from 'enzyme';
-import HelloWorld from './index.js';
+import App from './index';
+import HelloWorld from '../HelloWorld';
 
-ava('Tests that true is true.', (test) => {
+it('Tests that the App renders.', () => {
   const wrapper = shallow(<HelloWorld />);
-  test.is(wrapper.text(), 'Hello World!');
+  expect(wrapper.text()).toBe('Hello World!');
 });
