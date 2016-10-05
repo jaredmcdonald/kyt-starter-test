@@ -3,7 +3,7 @@ import express from 'express';
 
 const path = require('path');
 
-// eslint-disable-nextline import/no-dynamic-require
+// eslint-disable-next-line import/no-dynamic-require
 const clientAssets = require(process.env.ASSETS_MANIFEST);
 
 const app = express();
