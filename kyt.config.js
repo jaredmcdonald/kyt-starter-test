@@ -1,7 +1,7 @@
 
 module.exports = {
-  serverPort: 3100,
-  clientPort: 3101,
-  prototypePort: 3102,
+  serverURL: 'http://localhost:3100',
+  clientURL: 'http://localhost:3101',
+  prototypeURL: 'http://localhost:3102',
   reactHotLoader: true,
 };
