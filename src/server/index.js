@@ -1,19 +1,24 @@
 
+/* eslint-disable prefer-template */
+
+import path from 'path';
 import express from 'express';
 
-const path = require('path');
-
 // eslint-disable-next-line import/no-dynamic-require
-const clientAssets = require(process.env.ASSETS_MANIFEST);
+const clientAssets = require(KYT.ASSETS_MANIFEST);
 
 const app = express();
-const staticPath = path.join(process.cwd(), process.env.PUBLIC_DIR);
-app.use(express.static(staticPath));
+
+app.use(express.static(path.join(process.cwd(), KYT.PUBLIC_DIR)));
 
 app.get('/', (req, res) => {
   res.send(`
     <head>
-      <link rel='stylesheet' type='text/css' href='${clientAssets.main.css}'>
+      <link rel="shortcut icon" href='/kyt-favicon.png'>
+      ${clientAssets.main.css ?
+        '<link rel="stylesheet" type="text/css" href="' + clientAssets.main.css + '">'
+        : ''}
+      <title>React kyt</title>
     </head>
     <body>
       <div id='root'></div>
@@ -22,4 +27,4 @@ app.get('/', (req, res) => {
   `);
 });
 
-app.listen(parseInt(process.env.SERVER_PORT, 10));
+app.listen(parseInt(KYT.SERVER_PORT, 10));
