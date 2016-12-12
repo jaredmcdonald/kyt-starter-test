@@ -1,12 +1,14 @@
 {
-  "name": "wf-kyt-starter",
+  "name": "kyt-starter-test",
+  "private": true,
   "version": "1.0.0",
-  "description": "The default starter kit for kyt apps.",
+  "description": "starter kyt for kyt e2e tests",
   "main": "index.js",
   "dependencies": {
+    "babel-preset-kyt-react": "0.1.0-alpha.1",
     "enzyme": "^2.4.1",
     "express": "^4.14.0",
-    "kyt": "git+ssh://git@github.com/nytm/wf-kyt.git",
+    "kyt": "NYTimes/kyt",
     "react": "^15.3.0",
     "react-addons-test-utils": "^15.3.0",
     "react-dom": "^15.3.0"
@@ -15,15 +17,15 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nytm/wf-kyt-starter.git"
+    "url": "git+https://github.com/NYTimes/wf-kyt-starter.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nytm/wf-kyt-starter/issues"
+    "url": "https://github.com/NYTimes/wf-kyt-starter/issues"
   },
   "kyt": {
     "version": "0.2.0"
   },
-  "homepage": "https://github.com/nytm/wf-kyt-starter#readme"
+  "homepage": "https://github.com/NYTimes/wf-kyt-starter#readme"
 }
